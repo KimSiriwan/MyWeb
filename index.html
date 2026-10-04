@@ -4,11 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>For Maple ♡</title>
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Itim&family=Kanit:wght@300;400;500;600&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
   <div id="stars"></div>
@@ -17,207 +20,520 @@
   <!-- 01 PASSWORD -->
   <section class="screen active" id="passwordScreen">
     <div class="card password-card">
+
       <div class="tiny">A LITTLE SURPRISE FOR YOU</div>
+
       <div class="lock">🔐</div>
+
       <h1>สวัสดีซุ่มเจ้า คุณวรรณศิริ อิอิ</h1>
+
       <p>ทายรหัสมาจ่ะ ก่อนเข้า</p>
 
       <div class="hint-box">
         <span>💡 คำใบ้</span>
-        <strong>วันสำคัญของ เมเปิ้ล + คิม + สิ่งที่เหมือนกันในสมการนี้ = (ตัวเลข)?</strong>
+        <strong>
+          วันสำคัญของ เมเปิ้ล + คิม + สิ่งที่เหมือนกันในสมการนี้ = (ตัวเลข)?
+        </strong>
       </div>
 
-      <input id="passwordInput" type="text" placeholder="ใส่รหัสลับ..." autocomplete="off">
-      <button class="main-btn" id="unlockBtn">ยืนยันรหัส ✨</button>
+      <!-- เห็นรหัสที่พิมพ์ -->
+      <input
+        id="passwordInput"
+        type="text"
+        placeholder="ใส่รหัสลับ..."
+        autocomplete="off"
+      >
+
+      <button class="main-btn" id="unlockBtn">
+        ยืนยันรหัส ✨
+      </button>
+
       <p class="error" id="passwordError"></p>
+
     </div>
   </section>
 
+
   <!-- 02 ID CARD -->
   <section class="screen" id="identityScreen">
+
     <div class="id-card">
+
       <div class="id-top">
         <span>FRIEND IDENTITY CARD</span>
         <span>NO. 001</span>
       </div>
 
       <div class="id-body">
+
         <div class="profile-photo">
           <img src="images/maple.jpg" alt="รูปเมเปิ้ล">
           <span>YOUR PHOTO</span>
         </div>
 
         <div class="id-info">
-          <p><small>NAME</small><b>วรรณศิริ ร่มรื่น (เมเปิ้ล)</b></p>
-          <p><small>BIRTHDAY</small><b>4 ตุลาคม 2548</b></p>
-          <p><small>SPECIAL SKILL</small><b>ร้องเพลงท่อนเดิมๆได้ทั้งวันอะคนนี้ </b></p>
+
+          <p>
+            <small>NAME</small>
+            <b>วรรณศิริ ร่มรื่น (เมเปิ้ล)</b>
+          </p>
+
+          <p>
+            <small>BIRTHDAY</small>
+            <b>4 ตุลาคม 2548</b>
+          </p>
+
+          <p>
+            <small>SPECIAL SKILL</small>
+            <b>ร้องเพลงท่อนเดิมๆได้ทั้งวันอะคนนี้</b>
+          </p>
+
         </div>
+
       </div>
 
       <div class="id-question">
+
         <h2>ยืนยันตัวตนมาเด้...</h2>
+
         <p>ใช่ หรือ ไม่ใช่?</p>
+
         <div class="choice-row">
-          <button class="choice yes" id="yesBtn">ใช่สิ ฉันเอง 💅🏻</button>
-          <button class="choice no" id="noBtn">ไม่ใช่ ❌</button>
+
+          <button class="choice yes" id="yesBtn">
+            ใช่สิ ฉันเอง 💅🏻
+          </button>
+
+          <button class="choice no" id="noBtn">
+            ไม่ใช่ ❌
+          </button>
+
         </div>
+
         <p class="tease" id="tease"></p>
+
       </div>
+
     </div>
+
   </section>
 
-  <!-- STORY SCREENS -->
+
+  <!-- STORY 01 -->
   <section class="screen story-screen" id="story1">
+
     <div class="story">
-      <div class="chapter">01 / FROM ME TO YOU</div>
+
+      <div class="chapter">
+        01 / FROM ME TO YOU
+      </div>
+
       <h1>โอ่ย เขินนหลายย</h1>
-      <p>แต่ขอบคุณนะที่เราได้รู้จักกัน ได้มาเป็นเพื่อนกัน</p>
-      <p>ขอโทษนะที่ปีนี้อิฉันไม่ได้ไปหา..</p>
-      <p class="soft">เเล้วก็อยากบอกว่า...</p>
-      <button class="next-btn" data-next="story2">ถัดไป →</button>
+
+      <p>
+        แต่ขอบคุณนะที่เราได้รู้จักกัน ได้มาเป็นเพื่อนกัน
+      </p>
+
+      <p>
+        ขอโทษนะที่ปีนี้อิฉันไม่ได้ไปหา..
+      </p>
+
+      <p class="soft">
+        เเล้วก็อยากบอกว่า...
+      </p>
+
+      <button class="next-btn" data-next="story2">
+        ถัดไป →
+      </button>
+
     </div>
+
   </section>
 
+
+  <!-- STORY 02 -->
   <section class="screen story-screen" id="story2">
+
     <div class="story">
-      <div class="chapter">02 / REMEMBER THIS</div>
+
+      <div class="chapter">
+        02 / REMEMBER THIS
+      </div>
+
       <h1>อยากบอกว่า...</h1>
-      <p >มึงไม่ได้ตัวคนเดียว  ไม่ว่าจะเจอปัญหาหรืออุปสรรคอะไร
-      ก็ยังมีเพื่อนคนนี้และเหล่าสหายอีกนะ</p>
-      <p class="bold">อย่าเก็บทุกอย่างไว้คนเดียว</p>
-      <p>เพราะพวกกูอยากรู้อยากเห็นด้วย เเชร์หน่อย</p>
-      <img class="story-photo" src="images/friends.jpg" alt="รูปเพื่อน ๆ">
-      <button class="next-btn" data-next="story3">ถัดไป →</button>
+
+      <p>
+        มึงไม่ได้ตัวคนเดียว ไม่ว่าจะเจอปัญหาหรืออุปสรรคอะไร
+        ก็ยังมีเพื่อนคนนี้และเหล่าสหายอีกนะ
+      </p>
+
+      <p class="bold">
+        อย่าเก็บทุกอย่างไว้คนเดียว
+      </p>
+
+      <p>
+        เพราะพวกกูอยากรู้อยากเห็นด้วย เเชร์หน่อย
+      </p>
+
+      <img
+        class="story-photo"
+        src="images/friends.jpg"
+        alt="รูปเพื่อน ๆ"
+      >
+
+      <button class="next-btn" data-next="story3">
+        ถัดไป →
+      </button>
+
     </div>
+
   </section>
 
+
+  <!-- STORY 03 -->
   <section class="screen story-screen" id="story3">
+
     <div class="story">
-      <div class="chapter">03 / YOU DON'T HAVE TO</div>
+
+      <div class="chapter">
+        03 / YOU DON'T HAVE TO
+      </div>
+
       <h1>รู้ใช่ไหมว่า...</h1>
-      <p class="huge">ไม่ต้องเข้มแข็งตลอดเวลาก็ได้</p>
-      <p>เหนื่อยก็พักบ้าง เศร้าก็ร้องออกมา ไม่ต้องกลั้นเอาไว้</p>
-      <div class="scream">กรี๊ดออกมาค่ะสาว!!!</div>
-      <button class="next-btn" data-next="story4">ถัดไป →</button>
+
+      <p class="huge">
+        ไม่ต้องเข้มแข็งตลอดเวลาก็ได้
+      </p>
+
+      <p>
+        เหนื่อยก็พักบ้าง เศร้าก็ร้องออกมา
+        ไม่ต้องกลั้นเอาไว้
+      </p>
+
+      <div class="scream">
+        กรี๊ดออกมาค่ะสาว!!!
+      </div>
+
+      <button class="next-btn" data-next="story4">
+        ถัดไป →
+      </button>
+
     </div>
+
   </section>
 
+
+  <!-- STORY 04 -->
   <section class="screen story-screen" id="story4">
+
     <div class="story">
-      <div class="chapter">04 / CALL ME</div>
+
+      <div class="chapter">
+        04 / CALL ME
+      </div>
+
       <h1>วันที่เหนื่อย...</h1>
-      <p>วันที่ร้องไห้ หรือวันที่ยอมแพ้กับปัญหาสังฆังนั่น</p>
-      <p class="huge">ก็อย่าลืมพวกเราตรงนี้นะ</p>
-      <p>พร้อมจะสนับสนุน และซัพพอร์ตมาก ๆ</p>
-      <p class="phone-line">ถึงว่าจะนอนไว...<br><strong>แต่โทรมาได้ทุ๊กกกกกเมื่ออออ </strong></p>
-      <p>อิหลีติ!</p>
-      <button class="next-btn" data-next="memory1">ถัดไป →</button>
+
+      <p>
+        วันที่ร้องไห้ หรือวันที่ยอมแพ้กับปัญหาสังฆังนั่น
+      </p>
+
+      <p class="huge">
+        ก็อย่าลืมพวกเราตรงนี้นะ
+      </p>
+
+      <p>
+        พร้อมจะสนับสนุน และซัพพอร์ตมาก ๆ
+      </p>
+
+      <p class="phone-line">
+        ถึงว่าจะนอนไว...<br>
+        <strong>แต่โทรมาได้ทุ๊กกกกกเมื่ออออ</strong>
+      </p>
+
+      <p>
+        อิหลีติ!
+      </p>
+
+      <button class="next-btn" data-next="memory1">
+        ถัดไป →
+      </button>
+
     </div>
+
   </section>
 
-  <!-- MEMORIES -->
+
+  <!-- MEMORY 01 -->
   <section class="screen memory-screen" id="memory1">
-    <div class="memory">
-      <div class="chapter">MEMORY 01</div>
-      <h1>จำได้ไหมคน ๆ นั้น...</h1>
- <!-- MEMORIES -->
-<section class="screen memory-screen" id="memory1">
-  <div class="memory">
-    <div class="chapter">MEMORY 01</div>
 
-    <h1>จำได้ไหมคน ๆ นั้น...</h1>
-    <p>โคตรฮาาาาาาาาาาาาาาาา</p>
-    <div class="media-frame">
-      <video controls playsinline>
-        <source src="videos/maple-stairs.mp4" type="video/mp4">
-        เบราว์เซอร์ของคุณไม่รองรับวิดีโอ
-      </video>
+    <div class="memory">
+
+      <div class="chapter">
+        MEMORY 01
+      </div>
+
+      <h1>
+        จำได้ไหมคน ๆ นั้น...
+      </h1>
+
+      <p>
+        โคตรฮาาาาาาาาาาาาาาาา
+      </p>
+
+      <!-- VIDEO -->
+      <div class="media-frame">
+
+        <video controls playsinline>
+          <source
+            src="videos/maple-stairs.mp4"
+            type="video/mp4"
+          >
+
+          เบราว์เซอร์ของคุณไม่รองรับวิดีโอ
+
+        </video>
+
+      </div>
+
+      <span>
+        คิดถึงหล่ะสิ้
+      </span>
+
+      <!-- ปุ่มอยู่ใต้คลิป -->
+      <button class="next-btn" data-next="memory2">
+        ต่อไป →
+      </button>
+
     </div>
 
-    <span>คิดถึงหล่ะสิ้</span>
-
-    <button class="next-btn" data-next="memory2">
-      ต่อไป →
-    </button>
-  </div>
-</section>
-
-  <section class="screen memory-screen" id="memory2">
-    <div class="memory">
-      <div class="chapter">MEMORY 02</div>
-      <h1>อะ ถ้ายังจำไม่ได้...</h1>
-      <p class="huge">คนนี้อะ จำได้ยัง?</p>
-      <img class="memory-photo" src="images/garden.jpg" alt="รูปเมเปิ้ลทำกิจกรรม">
-      <p>เด็กกระโปกที่ต้องทำสวน ปั้นดินที่ศาสตร์พระราชา</p>
-      <p class="proud">เจ๋งสุดคนนี้ ไม่รู้ดิเเค่รู้สึกว่าพวกเราโคตรเก่งที่ผ่านมันไปได้ ภูมิใจอะ</p>
-      <button class="next-btn" data-next="memory3">ต่อไป →</button>
-    </div>
   </section>
 
-  <section class="screen memory-screen" id="memory3">
+
+  <!-- MEMORY 02 -->
+  <section class="screen memory-screen" id="memory2">
+
     <div class="memory">
-      <div class="chapter">MEMORY 03</div>
-      <h1>พอมองย้อนกลับไป...</h1>
-      <p class="huge">กลายเป็นสนุกซะงั้น 😂</p>
+
+      <div class="chapter">
+        MEMORY 02
+      </div>
+
+      <h1>
+        อะ ถ้ายังจำไม่ได้...
+      </h1>
+
+      <p class="huge">
+        คนนี้อะ จำได้ยัง?
+      </p>
+
+      <img
+        class="memory-photo"
+        src="images/garden.jpg"
+        alt="รูปเมเปิ้ลทำกิจกรรม"
+      >
+
+      <p>
+        เด็กกระโปกที่ต้องทำสวน ปั้นดินที่ศาสตร์พระราชา
+      </p>
+
+      <p class="proud">
+        เจ๋งสุดคนนี้ ไม่รู้ดิเเค่รู้สึกว่าพวกเราโคตรเก่ง
+        ที่ผ่านมันไปได้ ภูมิใจอะ
+      </p>
+
+      <button class="next-btn" data-next="memory3">
+        ต่อไป →
+      </button>
+
+    </div>
+
+  </section>
+
+
+  <!-- MEMORY 03 -->
+  <section class="screen memory-screen" id="memory3">
+
+    <div class="memory">
+
+      <div class="chapter">
+        MEMORY 03
+      </div>
+
+      <h1>
+        พอมองย้อนกลับไป...
+      </h1>
+
+      <p class="huge">
+        กลายเป็นสนุกซะงั้น 😂
+      </p>
+
       <div class="gallery">
+
         <img src="images/memory1.jpg" alt="ความทรงจำ 1">
         <img src="images/memory2.jpg" alt="ความทรงจำ 2">
         <img src="images/memory3.jpg" alt="ความทรงจำ 3">
         <img src="images/memory4.jpg" alt="ความทรงจำ 4">
         <img src="images/memory5.jpg" alt="ความทรงจำ 5">
         <img src="images/memory6.jpg" alt="ความทรงจำ 6">
+
       </div>
-      <button class="next-btn" data-next="memory4">ต่อไป →</button>
+
+      <button class="next-btn" data-next="memory4">
+        ต่อไป →
+      </button>
+
     </div>
+
   </section>
 
+
+  <!-- MEMORY 04 -->
   <section class="screen memory-screen" id="memory4">
+
     <div class="memory">
-      <div class="chapter">MEMORY 04</div>
-      <h1>และดูตอนนี้ดิ...</h1>
-      <img class="memory-photo wide" src="images/current.jpg" alt="รูปปัจจุบัน">
-      <p class="huge">พวกเราผ่านมันมาได้แล้ว</p>
-      <p class="proud">โคตรจะเริ่ดเลยอะเนอะ ✨</p>
-      <button class="next-btn" data-next="letter">ไปต่อ →</button>
+
+      <div class="chapter">
+        MEMORY 04
+      </div>
+
+      <h1>
+        และดูตอนนี้ดิ...
+      </h1>
+
+      <img
+        class="memory-photo wide"
+        src="images/current.jpg"
+        alt="รูปปัจจุบัน"
+      >
+
+      <p class="huge">
+        พวกเราผ่านมันมาได้แล้ว
+      </p>
+
+      <p class="proud">
+        โคตรจะเริ่ดเลยอะเนอะ ✨
+      </p>
+
+      <button class="next-btn" data-next="letter">
+        ไปต่อ →
+      </button>
+
     </div>
+
   </section>
+
 
   <!-- LETTER -->
   <section class="screen story-screen" id="letter">
+
     <div class="story letter">
-      <div class="chapter">ONE LAST THING</div>
-      <h1>อยากบอกว่า...</h1>
-      <p>ถึงแม้ว่าเราจะห่างไกลกันมากขึ้น</p>
-      <p class="huge">แต่เพื่อนก็คือเพื่อน</p>
-      <p>ตัดกันไม่ได้แล้ว 🤏🏻</p>
-      <p class="love">รักนะ จุ๊บ ๆ 💋</p>
-      <p>ภูมิใจในตัวเมเปิ้ล<br><strong>ในทุก ๆ ก้าวมาก ๆ</strong></p>
-      <button class="next-btn" data-next="final">หน้าสุดท้ายละที่รัก 🎂</button>
+
+      <div class="chapter">
+        ONE LAST THING
+      </div>
+
+      <h1>
+        อยากบอกว่า...
+      </h1>
+
+      <p>
+        ถึงแม้ว่าเราจะห่างไกลกันมากขึ้น
+      </p>
+
+      <p class="huge">
+        แต่เพื่อนก็คือเพื่อน
+      </p>
+
+      <p>
+        ตัดกันไม่ได้แล้ว 🤏🏻
+      </p>
+
+      <p class="love">
+        รักนะ จุ๊บ ๆ 💋
+      </p>
+
+      <p>
+        ภูมิใจในตัวเมเปิ้ล<br>
+        <strong>ในทุก ๆ ก้าวมาก ๆ</strong>
+      </p>
+
+      <button class="next-btn" data-next="final">
+        หน้าสุดท้ายละที่รัก 🎂
+      </button>
+
     </div>
+
   </section>
+
 
   <!-- FINAL -->
   <section class="screen final-screen" id="final">
-    <div class="final-content">
-      <div class="cake">🎂</div>
-      <div class="tiny">TODAY IS YOUR DAY</div>
-      <h1>HAPPY<br><span>BIRTHDAY</span></h1>
-      <h2>MAPLE ♡</h2>
 
-      <div class="wish">
-        <p>ขอให้โลกนี้ใจดีกับเมเปิ้ล</p>
-        <p>ขอให้เปิ้ลได้ทำตามที่ในสิ่งที่ตัวเองต้องการสำเร็จ</p>
-        <p>มีแต่คนรัก คนเอ็นดู<br>และมีคนคอยสนับสนุนซัพพอร์ตไปตลอด</p>
-        <p>ขอบคุณมากจริง ๆ ที่เกิดมาเป็นเพื่อนกันนะ</p>
-        <p class="highlight">โปรดมีชีวิตต่อไปเรื่อย ๆ</p>
-        <p>รักตัวเองมาก ๆ นะ<br>อย่าลืมยิ้มเยอะ ๆ หล่ะ 😊</p>
-        <p class="shy">เขินอะ ไปแระ<br>บุย ๆ 👋🏻</p>
+    <div class="final-content">
+
+      <div class="cake">
+        🎂
       </div>
 
-      <button class="replay" id="replayBtn">↻ ดูตั้งแต่ต้นอีกครั้ง</button>
+      <div class="tiny">
+        TODAY IS YOUR DAY
+      </div>
+
+      <h1>
+        HAPPY<br>
+        <span>BIRTHDAY</span>
+      </h1>
+
+      <h2>
+        MAPLE ♡
+      </h2>
+
+      <div class="wish">
+
+        <p>
+          ขอให้โลกนี้ใจดีกับเมเปิ้ล
+        </p>
+
+        <p>
+          ขอให้เปิ้ลได้ทำตามที่ในสิ่งที่ตัวเองต้องการสำเร็จ
+        </p>
+
+        <p>
+          มีแต่คนรัก คนเอ็นดู<br>
+          และมีคนคอยสนับสนุนซัพพอร์ตไปตลอด
+        </p>
+
+        <p>
+          ขอบคุณมากจริง ๆ ที่เกิดมาเป็นเพื่อนกันนะ
+        </p>
+
+        <p class="highlight">
+          โปรดมีชีวิตต่อไปเรื่อย ๆ
+        </p>
+
+        <p>
+          รักตัวเองมาก ๆ นะ<br>
+          อย่าลืมยิ้มเยอะ ๆ หล่ะ 😊
+        </p>
+
+        <p class="shy">
+          เขินอะ ไปแระ<br>
+          บุย ๆ 👋🏻
+        </p>
+
+      </div>
+
+      <button class="replay" id="replayBtn">
+        ↻ ดูตั้งแต่ต้นอีกครั้ง
+      </button>
+
     </div>
+
   </section>
 
+
   <script src="script.js"></script>
+
 </body>
 </html>
